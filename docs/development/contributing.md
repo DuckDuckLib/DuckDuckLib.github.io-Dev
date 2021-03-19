@@ -29,6 +29,8 @@ In addition to `mkdocs`, the following 3rd party plugins are required to build t
 ```zsh
 # mkdcomments
 pip3 pip install git+https://github.com/ryneeverett/python-markdown-comments.git
+# mkdocs-material
+pip3 install mkdocs-material # also available: docker and git
 ```
 
 ##### `mkdcomments`
@@ -38,6 +40,16 @@ github: [ryneeverett/python-markdown-comments](https://github.com/ryneeverett/py
 > Removes triple-dashed html comments (`<!---comment-->`) in preprocessing.
 
 required to fix (workaround) issue: [YAML frontmatter parsed totally wrong when published to github pages via gh-deploy · Issue #23 · DuckDuckLib/duckduckLib](https://github.com/DuckDuckLib/duckduckLib/issues/23)
+
+##### `mkdocs-material`
+
+github: [squidfunk/mkdocs-material: A Material Design theme for MkDocs](https://github.com/squidfunk/mkdocs-material)
+
+docs/demo: [Getting started - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/)
+
+
+
+> Create a branded static site from a set of Markdown files to host the  documentation of your Open Source or commercial project – customizable,  searchable, mobile-friendly, 40+ languages. Set up in 5 minutes.
 
 #### Building
 

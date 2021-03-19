@@ -1,4 +1,4 @@
-# faq/Questions
+#faq/Questions
 
 ## How do I configure preferences for DuckDuckLib?
 

@@ -51,6 +51,10 @@ theme:
   custom_dir: 'cinder'
   colorscheme: dracula
   # just for code highlighting, I think
+  # REMOVED
+  # this theme has a bug that I can't resolve without removing 
+  # a bunch of stuff from the site
+  # see: https://github.com/chrissimpkins/cinder/issues/102
 
 #nav: 
 #disabled because auto-generated is doing fine

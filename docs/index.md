@@ -1,7 +1,7 @@
 
-# DuckDuckLib 🦆🦆🏴
+# Home
 
-## 🍞🐟🎣👓🐕🐣🥖🍞🐟🎣
+## 
 
 🦆🦆🏴
 
@@ -17,11 +17,7 @@ You do not need this extension to accomplish either of these goals. It is merely
 
 
 
-## FAQ
-
-### What is DuckDuckGo?
-
-
+🍞🐟🎣👓🐕🐣🥖🍞🐟🎣
 
 
 
