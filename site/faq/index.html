@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Faq - 🦆🦆🏴 DuckDuckLib - Firefox search extension that turns off "moderate" results</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">🦆🦆🏴 DuckDuckLib - Firefox search extension that turns off "moderate" results</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../contact/" class="nav-link">Contact</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Faq</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../instructions/" class="nav-link">Instructions</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../links/" class="nav-link">Links</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../about/how/" class="dropdown-item">How</a>
+</li>
+                                    
+<li>
+    <a href="../about/privacy/" class="dropdown-item">Privacy</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../development/contributing/" class="dropdown-item">Contributing</a>
+</li>
+                                    
+<li>
+    <a href="../development/roadmap/" class="dropdown-item">Roadmap</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../contact/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../instructions/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/DuckDuckLib/DuckDuckLib.github.io/blob/main/docs/faq.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#use-for-root-level-document" class="nav-link">use for root-level document:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#use-for-2ndary-level-document" class="nav-link">use for 2ndary level document:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#typora-copy-images-to-images" class="nav-link">typora-copy-images-to: ../images</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#faqquestions" class="nav-link">faq/Questions</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#how-do-i-configure-preferences-for-duckducklib" class="nav-link">How do I configure preferences for DuckDuckLib?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#can-i-sync-duckducklib-on-different-devices" class="nav-link">Can I sync DuckDuckLib on different devices?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#is-duckducklib-available-for-platforms-other-than-firefox-desktop" class="nav-link">Is DuckDuckLib available for platforms other than Firefox desktop?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#is-duckducklib-private" class="nav-link">Is DuckDuckLib private?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#why-did-you-write-5000-pages-of-documentation-for-such-a-simple-extension" class="nav-link">Why did you write ~5000 pages of documentation for such a simple extension?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#the-name-is-silly" class="nav-link">The name is silly.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#are-you-affiliated-with-duckduckgo" class="nav-link">Are you affiliated with DuckDuckGo?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="use-for-root-level-document">use for root-level document:</h1>
+<p>typora-copy-images-to: /images</p>
+<h1 id="use-for-2ndary-level-document">use for 2ndary level document:</h1>
+<h1 id="typora-copy-images-to-images">typora-copy-images-to: ../images</h1>
+<hr />
+<h1 id="faqquestions">faq/Questions</h1>
+<h2 id="how-do-i-configure-preferences-for-duckducklib">How do I configure preferences for DuckDuckLib?</h2>
+<p>There are no preferences to configure. Maybe one day if I learn how to create plugins with preferences, I will add them. </p>
+<h2 id="can-i-sync-duckducklib-on-different-devices">Can I sync DuckDuckLib on different devices?</h2>
+<p>Firefox comes equipped with <em>Sync</em> a service that works across mobile and desktop devices. It can be configured to automatically share search extensions, among many other things, to your various devices. </p>
+<p>Read official documentation: <a href="https://support.mozilla.org/en-US/kb/how-do-i-set-sync-my-computer">How do I set up Sync on my computer?</a></p>
+<h2 id="is-duckducklib-available-for-platforms-other-than-firefox-desktop">Is DuckDuckLib available for platforms other than Firefox desktop?</h2>
+<h3 id="chrome-mobile-chromeos-chrome-desktop-and-all-chromium-variants-brave-etc">Chrome Mobile, ChromeOS, Chrome Desktop and all Chromium variants (Brave etc)?</h3>
+<p>Not available and no imminent plans. See <a href="https://duckduckgo.com/app">DuckDuckGo&rsquo;s apps page</a> for what they have available.</p>
+<h3 id="firefox-mobile-including-all-variants-such-as-klar-firefox-focus-etc">Firefox Mobile (including all variants such as Klar, Firefox Focus etc)?</h3>
+<p>Not available and no imminent plans.  See <a href="https://duckduckgo.com/app">DuckDuckGo&rsquo;s apps page</a> for what they have available.</p>
+<h3 id="safari-for-desktop-safari-for-iphone-or-ios">Safari for Desktop, Safari for iPhone or iOS?</h3>
+<p>Not available and no imminent plans.  See <a href="https://duckduckgo.com/app">DuckDuckGo&rsquo;s apps page</a> for what they have available.</p>
+<h3 id="other-browsers-like-opera-or-edge">Other browsers like Opera or Edge?</h3>
+<p>Not available and no imminent plans.  See <a href="https://duckduckgo.com/app">DuckDuckGo&rsquo;s apps page</a> for what they have available.</p>
+<h2 id="is-duckducklib-private">Is DuckDuckLib private?</h2>
+<p>Using DuckDuckLib extension is as private as conducting the same activity by searching directly from <a href="https://DuckDuckGo.com">DuckDuckGo.com</a>. No information goes anywhere different. </p>
+<p>Which begs the question, how private is DuckDuckGo.com?</p>
+<p>Their <a href="https://help.duckduckgo.com/duckduckgo-help-pages/privacy/no-tracking/">read what they have to say</a> to learn about some technical matters and configurations to enhance privacy using DuckDuckGo.</p>
+<p>Less biased opinions:</p>
+<ul>
+<li><a href="https://www.privacytools.io//">privacytools.io</a> is a well-known <a href="https://www.privacytools.io/about/">collectively-run</a> website that evaluates programs and services for privacy and security, listing only those which meet stringent criteria. (And yes, they are very willing to de-list companies, services and websites who screw up.) They list DuckDuckGo on their <a href="https://www.privacytools.io/providers/search-engines/">page of trustworthy search engines</a>. (Visited March 15, 2021)</li>
+<li><a href="https://www.dailydot.com/debug/what-is-duckduckgo-vs-google/">What Is DuckDuckGo? Tips, Tricks, and How to Use the Search Engine</a> (Jan 27, 2021)</li>
+</ul>
+<p>Note: If you decide to look for more information, remember to make sure the articles you are reading are recent. In researching I found a lot of writing from 2 or 3 years ago which may not reflect the current state of affairs. When it comes to techy kinds of things, the older information is, the more due diligence is required before trusting it.</p>
+<h2 id="why-did-you-write-5000-pages-of-documentation-for-such-a-simple-extension">Why did you write ~5000 pages of documentation for such a simple extension?</h2>
+<h3 id="answer-1-nobody-was-born-knowing-anything">Answer #1: Nobody was born knowing anything</h3>
+<p>Things that seem simple to one person might be at the bleeding edge of another&rsquo;s capabilities</p>
+<p>Maybe someone will read something a bit more than they were expecting and be inspired to curiosity; that has certainly happened to me lots of times</p>
+<h3 id="answer-2-for-my-own-benefit">Answer #2: For my own benefit</h3>
+<p>I wanted to learn about and practice creating documentation, since I&rsquo;ve never done it before and am interested in contributing more to Free Software in this way. I have often noticed deficits in documentation in projects I&rsquo;m interested in making use of. It&rsquo;s difficult to get into an existing project to help it out because there are existing structures, histories, and reasons why things happened the way they did. Also, if my problem is that I can&rsquo;t understand how something works, then I can&rsquo;t very well do much to fix it. </p>
+<p>So when it occurred to me to make this extremely simple extension, I thought I would try to do a <em>really good job</em> at documentation, to see what it&rsquo;s like. I have to say it was <em>much, much</em> more difficult than I anticipated. </p>
+<h2 id="the-name-is-silly">The name is silly.</h2>
+<p>I am not very good at naming things. </p>
+<p>I wanted to keep the DuckDuck part of DuckDuckGo because it is recognizable. But I wanted to be clearly unaffiliated with the company. The only thing I could think of was to replace the &ldquo;Go&rdquo; with &ldquo;Lib&rdquo; (short for &ldquo;liberty&rdquo; or even &ldquo;liberation&rdquo;). </p>
+<p>It is of course excessively grandiose to equate some a tiny convenience with either of those. But a better option did not present itself to me. Got a better idea?</p>
+<h2 id="are-you-affiliated-with-duckduckgo">Are you affiliated with DuckDuckGo?</h2>
+<p>Nope.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

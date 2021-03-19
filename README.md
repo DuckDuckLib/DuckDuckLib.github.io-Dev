@@ -1,1 +1,1 @@
-# DuckDuckLib.github.io-Dev
+# DuckDuckLib.github.io

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Instructions - 🦆🦆🏴 DuckDuckLib - Firefox search extension that turns off "moderate" results</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">🦆🦆🏴 DuckDuckLib - Firefox search extension that turns off "moderate" results</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../contact/" class="nav-link">Contact</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../faq/" class="nav-link">Faq</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Instructions</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../links/" class="nav-link">Links</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../about/how/" class="dropdown-item">How</a>
+</li>
+                                    
+<li>
+    <a href="../about/privacy/" class="dropdown-item">Privacy</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../development/contributing/" class="dropdown-item">Contributing</a>
+</li>
+                                    
+<li>
+    <a href="../development/roadmap/" class="dropdown-item">Roadmap</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../faq/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../links/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/DuckDuckLib/DuckDuckLib.github.io/blob/main/docs/instructions.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#use-for-root-level-document" class="nav-link">use for root-level document:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#use-for-2ndary-level-document" class="nav-link">use for 2ndary level document:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#typora-copy-images-to-images" class="nav-link">typora-copy-images-to: ../images</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#instructions" class="nav-link">Instructions</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#using-duckducklib-search-extension" class="nav-link">Using DuckDuckLib search extension</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#disable-or-uninstall-extension" class="nav-link">Disable or uninstall extension</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#zzztemp-delete" class="nav-link">zzztemp delete</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">🦆🦆🏴</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="use-for-root-level-document">use for root-level document:</h1>
+<p>typora-copy-images-to: /images</p>
+<h1 id="use-for-2ndary-level-document">use for 2ndary level document:</h1>
+<h1 id="typora-copy-images-to-images">typora-copy-images-to: ../images</h1>
+<hr />
+<h2 id="instructions">Instructions</h2>
+<h3 id="requirements">Requirements</h3>
+<p>This extension only works on Firefox for Desktop (includes laptops!). Firefox web browser is a great option for most people. </p>
+<p><a href="https://www.mozilla.org/en-US/firefox/new/">Download Firefox.</a> </p>
+<p>Once you have Firefox installed, make sure to <a href="https://support.mozilla.org/en-US/kb/update-firefox-latest-release">keep it updated</a>.</p>
+<h3 id="install-extension-quick">Install extension (quick)</h3>
+<figure>
+  <a href="images/ddL_screenshot_00_install_animation.gif" title="click to view fullsize"></a><img src="images/ddL_screenshot_00_install_animation.gif" width="400" align="centre" alt="screencapture animation showing the steps to install DuckDuckLib as firefox extension, which are enumerated below" /></a>
+  <figcaption>screencapture animation showing the steps to install DuckDuckLib as firefox extension, which are enumerated below</figcaption>
+</figure>
+<ol>
+<li>Visit the <a href="https://addons.mozilla.org/en-US/firefox/addon/duckducklib/">extension&rsquo;s web page</a> with Firefox.</li>
+<li>Click &ldquo;Add to Firefox&rdquo;, accept the confirmation dialogue and decide if you want it in private windows.</li>
+<li>Accept or decline setting DuckDuckLib as your default search engine. </li>
+<li>Done!</li>
+</ol>
+<h3 id="install-instructions-detailed">Install instructions (detailed)</h3>
+<ol>
+<li>Visit the <a href="https://addons.mozilla.org/en-US/firefox/addon/duckducklib/">extension&rsquo;s web page</a> with Firefox.</li>
+<li>Click &ldquo;Add to Firefox&rdquo;</li>
+</ol>
+<p><img alt="ddL_screenshot_00a_install_add_annotated" src="images/ddL_screenshot_00a_install_add_annotated-5808224.png" /></p>
+<ol>
+<li>A confirmation box appears to make sure you want to add the extension.  Click &ldquo;Add&rdquo;.</li>
+</ol>
+<p><img alt="ddL_screenshot_00b_install_accept_annotated" src="../images/ddL_screenshot_00b_install_accept_annotated.png" /></p>
+<ol>
+<li>A confirmation box appears asking if you want to make DuckDuck Lib the default search engine. This is <em>optional</em>. </li>
+<li><strong>If you select &ldquo;No&rdquo;</strong>: You will need to manually activate the plugin when you wish to use it. <a href="https://support.mozilla.org/en-US/kb/change-your-default-search-settings-firefox#w_one-click-search-alternatives">Read about how to change search engines on-the-fly</a> on the Firefox website. You default search tool will remain unchanged.</li>
+<li><strong>If you select &ldquo;Yes&rdquo;</strong>: (recommended!): Every time you use the location or search bar, you will automatically use unfiltered DuckDuckGo.</li>
+</ol>
+<p><img alt="ddL_screenshot_00c_install_changedefault_annotated" src="../images/ddL_screenshot_00c_install_changedefault_annotated.png" /></p>
+<ol>
+<li>
+<p>A confirmation box appears asking if you want to enable the DuckDuckLib plugin to work in Private browsing.</p>
+</li>
+<li>
+<p>Whether you allow this or not depends on how often and for what reasons you use Private browsing. Because this particular extension is so small and does very little, there is no real reason  <em>not</em> to allow this. However, if you would prefer to stay cautious dispensing this permission, the extension will work just fine in normal browsing.</p>
+</li>
+<li>
+<p><a href="https://support.mozilla.org/en-US/kb/extensions-private-browsing">Read about why Firefox asks for specific permission</a> to enable this.</p>
+</li>
+<li>You may be interested to read about &ldquo;Private&rdquo; browsing (known as &ldquo;incognito&rdquo; in Google Chrome) in general at <a href="https://en.wikipedia.org/wiki/Private_browsing">wikipedia</a>  and for <a href="https://support.mozilla.org/en-US/kb/private-browsing-use-firefox-without-history">Firefox specifically</a>. Private browsing does <em>not</em> protect web activity from being discovered by others as well as you may think! </li>
+</ol>
+<p><img alt="ddL_screenshot_00d_install_private_annotated" src="../images/ddL_screenshot_00d_install_private_annotated.png" /></p>
+<ol>
+<li>That&rsquo;s it, the extension is now installed!</li>
+</ol>
+<h2 id="using-duckducklib-search-extension">Using DuckDuckLib search extension</h2>
+<h3 id="method-1-through-the-location-bar">Method 1: Through the Location bar</h3>
+<p>This extension will take effect when you do a websearch <em>through the browser</em>.</p>
+<p>In Firefox, the default way to do this is by typing into the location bar near the top of the window.  The following illustration shows how to enter search terms, how to see which engine is active, and how to change engines for one search only. </p>
+<p><img alt="screen capture of searching via location bar in Firefox, with annotations indicating active search engine, and how to change engines for one search only" src="../images/ddL_screenshot_01a_searchbar_annotated.png" />-</p>
+<h3 id="method-1-b-through-the-search-bar">Method 1 (b): Through the search bar</h3>
+<p>By default, Firefox browser combines the Location and Search bar into one box. However, it is possible to <a href="https://support.mozilla.org/en-US/kb/change-your-default-search-settings-firefox#w_search-bar">change this</a> to get two separate boxes. In that case, DuckDuckLib will work via the search box. </p>
+<h3 id="method-2-in-the-new-tab-search-box">Method 2: In the New Tab search box</h3>
+<p>DuckDuckLib will be effective via the new tab (blank page). By default, a new page or tab should look a bit like the below. </p>
+<ol>
+<li>Type in the box (with blue border), to the left of the magnifying glass</li>
+<li>When you have entered you search term, press Enter or Return on your keyboard, or press the → arrow to proceed with search.</li>
+</ol>
+<p>The following illustration shows how to enter search terms, how to see which engine is active, and how to change engines for one search only. </p>
+<p><img alt="DDL_screenshot_01b_New-Tab-Search_annotated" src="../images/DDL_screenshot_01b_New-Tab-Search_annotated.png" /></p>
+<h3 id="wont-work-starting-searching-from-duckduckgocom">Won&rsquo;t work: Starting searching from DuckDuckGo.com</h3>
+<p>The DuckDuckLib search extension only works if you <em>initiate the search from Firefox</em>. Going directly to <a href="https://DuckDuckGo.com">DuckDuckGo.com</a> will evade the effect. </p>
+<p>If you wish to save you settings for this kind of search, you should check out the <a href="https://help.duckduckgo.com/duckduckgo-help-pages/settings/save/">DuckDuckGo documentation</a> on the subject.</p>
+<p><img alt="DDL_screenshot_01c_DDG-Search_annotated" src="../images/DDL_screenshot_01c_DDG-Search_annotated.png" /></p>
+<h4 id="if-it-is-possible-to-save-settings-in-a-cookie-why-bother-with-an-extension">If it is possible to save settings in a cookie, why bother with an extension?</h4>
+<ul>
+<li>If your cookie gets deleted or changed, the settings will be gone. </li>
+<li>If you share computers with others, switch profiles, or use different computers, you have to fiddle with cookies and settings all the time. This is more more convenient. </li>
+</ul>
+<h2 id="disable-or-uninstall-extension">Disable or uninstall extension</h2>
+<h3 id="option-1-keep-duckducklib-the-default-but-use-something-else-every-so-often">Option 1: Keep DuckDuckLib the default, but use something else every so often</h3>
+<ol>
+<li>Chose any of your other installed search extensions as described 🔗above, OR</li>
+<li>Manually visit the search page of another search engine, OR</li>
+<li>Manually go to DuckDuckGo&rsquo;s <a href="https://safe.duckduckgo.com/">Safe Search page</a> , OR</li>
+<li>Change the settings on a per-search basis, even in the midst of an existing search, if for some reason you want this function. Read <a href="https://help.duckduckgo.com/duckduckgo-help-pages/features/safe-search/">about safe search</a>. Likewise, if you would like ot occasionally enable regional search, there is relevant documentation <a href="https://help.duckduckgo.com/duckduckgo-help-pages/settings/regions/">about regional search</a>.</li>
+</ol>
+<h3 id="option-2-keep-duckducklib-installed-but-make-something-else-the-default">Option 2: Keep DuckDuckLib installed, but make something else the default</h3>
+<ul>
+<li>There are detailed <a href="https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons">instructions on the Firefox website</a> </li>
+<li>This way you can select DuckDuckLib as described above in 🔗Using DuckDuckLib only when you wish to use is.</li>
+</ul>
+<h3 id="disable-duckducklib">Disable DuckDuckLib</h3>
+<p>Please refer to Firefox documentation: <a href="https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons">Disable or remove Add-ons</a>. </p>
+<blockquote>
+<p>Disabling an extension will turn it off without removing it.</p>
+</blockquote>
+<p>To use DuckDuckLib again, you will have to </p>
+<h3 id="completely-removeuninstall-duckducklib">Completely remove/uninstall DuckDuckLib</h3>
+<p>Please refer to Firefox documentation: <a href="https://support.mozilla.org/en-US/kb/disable-or-remove-add-ons">Disable or remove Add-ons</a>. </p>
+<h2 id="zzztemp-delete">zzztemp delete</h2>
+<p>insert image template</p>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">figure</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;images/ddL_screenshot_00a_install_add_annotated.png&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;click to view fullsize&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;images/ddL_screenshot_00a_install_add_annotated.png&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">align</span><span class="o">=</span><span class="s">&quot;centre&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Click &quot;</span><span class="na">Add</span> <span class="na">to</span> <span class="na">Firefox</span><span class="err">&quot;&quot;</span> <span class="p">/&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">figcaption</span><span class="p">&gt;</span>Click &quot;Add to Firefox&quot;<span class="p">&lt;/</span><span class="nt">figcaption</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">figure</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;images/FILENAME.png&quot;</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;click to view fullsize&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;images/FILENAME.png&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;400&quot;</span> <span class="na">align</span><span class="o">=</span><span class="s">&quot;centre&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;ALT&quot;</span> <span class="p">/&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">figcaption</span><span class="p">&gt;</span>CAPTION<span class="p">&lt;/</span><span class="nt">figcaption</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<h1 id="_1">🦆🦆🏴</h1></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

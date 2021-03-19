@@ -1,0 +1,74 @@
+# documentation for mkdocs.yaml: https://www.mkdocs.org/user-guide/configuration
+#####  NOTES 🦆🦆
+#   🦆  TABS ( \t ) are not allowed; spaces only 
+#       see: https://yaml.org/spec/1.2/spec.html#id2777534
+#   🦆   
+
+site_name: 🦆🦆🏴 DuckDuckLib - Firefox search extension that turns off "moderate" results
+
+repo_url: https://github.com/DuckDuckLib/DuckDuckLib.github.io
+edit_uri: blob/main/docs/
+# this setting is required because this project uses the name "main" for main tree rather than "master" which is assumed; if omitted, all "edit" links will be broken
+remote_branch: main
+# this setting is required because this project uses the name "main" for main tree rather than "master" which is assumed; if omitted, all "edit" links will be broken
+
+#nav: 
+#disabled because auto-generated is doing fine
+#documention if ever required: https://www.mkdocs.org/user-guide/configuration/#nav
+
+markdown_extensions:
+# docs: https://www.mkdocs.org/user-guide/configuration/#markdown_extensions 
+# python-markdown supported by default: https://python-markdown.github.io/extensions/
+# 3rd party extension docs: https://github.com/Python-Markdown/markdown/wiki/Third-Party-Extensions
+#     🦆 when adding 3rd party extensions, update:
+#           - docs/development/contributing.md
+#           - about/privacy.md
+ 
+  - admonition
+  # Admonition | "rST-style admonitions"
+  # docs: https://python-markdown.github.io/extensions/admonition/
+  
+  - attr_list
+  # Attribute Lists | "syntax to define attributes on the various HTML elements in markdown’s output."
+  # docs: https://python-markdown.github.io/extensions/attr_list/
+
+  - codehilite
+  # CodeHilite | "code/syntax highlighting to standard Python-Markdown code blocks using Pygments"
+  # docs: https://python-markdown.github.io/extensions/code_hilite/
+
+  - fenced_code
+  # Fenced Code Blocks | "alternate method of defining code blocks without indentation"
+  # docs: https://python-markdown.github.io/extensions/fenced_code_blocks/
+  #   and: https://www.mkdocs.org/user-guide/writing-your-docs/#fenced-code-blocks
+ 
+  - meta
+  # Meta-Data | "for defining meta-data about a document" | Allows front matter in .md files
+  # docs: https://python-markdown.github.io/extensions/meta_data/
+  
+  - smarty
+  # Smarty Pants | "converts ASCII dashes, quotes and ellipses to their HTML entity equivalents"
+  # docs: https://python-markdown.github.io/extensions/smarty/
+  #  and: https://daringfireball.net/projects/smartypants/
+    
+  - tables
+  # Tables | "ability to create tables"
+  # docs: https://python-markdown.github.io/extensions/tables/
+  
+  - toc:
+# # Table of Contents | "generates a Table of Contents"
+# # docs: https://python-markdown.github.io/extensions/toc/
+#   permalink: true
+
+  
+
+
+plugins:
+# docs: https://www.mkdocs.org/user-guide/configuration/#plugins
+#  and: https://www.mkdocs.org/user-guide/plugins/ (mostly re: development)
+# list of 3rd party: https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins
+  - search
+
+
+
+
+

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Privacy - 🦆🦆🏴 DuckDuckLib - Firefox search extension that turns off "moderate" results</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">🦆🦆🏴 DuckDuckLib - Firefox search extension that turns off "moderate" results</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../contact/" class="nav-link">Contact</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../faq/" class="nav-link">Faq</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../instructions/" class="nav-link">Instructions</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../../links/" class="nav-link">Links</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../how/" class="dropdown-item">How</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Privacy</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../development/contributing/" class="dropdown-item">Contributing</a>
+</li>
+                                    
+<li>
+    <a href="../../development/roadmap/" class="dropdown-item">Roadmap</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../how/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../development/contributing/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/DuckDuckLib/DuckDuckLib.github.io/blob/main/docs/about/privacy.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#use-for-root-level-document" class="nav-link">use for root-level document:</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#typora-copy-images-to-images" class="nav-link">typora-copy-images-to: /images</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#use-for-2ndary-level-document" class="nav-link">use for 2ndary level document:</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#typora-copy-images-to-images_1" class="nav-link">typora-copy-images-to: ../images</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#privacy" class="nav-link">Privacy</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#the-duckducklib-firefox-extension" class="nav-link">The DuckDuckLib Firefox extension</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#document-history" class="nav-link">Document history</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#what-the-heck-do-i-care-about-privacy-policies-anyway" class="nav-link">~~What the heck do I care about Privacy Policies anyway?~~</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#third-parties-whose-constant-involvement-is-mandatory-to-use-the-extension" class="nav-link">Third parties whose constant involvement is mandatory to use the extension</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#third-parties-whose-involvement-is-optional-and-ancillary-to-search-function" class="nav-link">Third parties whose involvement is optional and                                    ancillary to search function</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="use-for-root-level-document">use for root-level document:</h1>
+<h1 id="typora-copy-images-to-images">typora-copy-images-to: /images</h1>
+<h1 id="use-for-2ndary-level-document">use for 2ndary level document:</h1>
+<h2 id="typora-copy-images-to-images_1">typora-copy-images-to: ../images</h2>
+<h1 id="privacy">Privacy</h1>
+<h2 id="the-duckducklib-firefox-extension">The DuckDuckLib Firefox extension</h2>
+<p>Please review 🔗How it works for a description of this extension.</p>
+<p>The author of DuckDuckLib, @CouldBeThis, has no access to anything at all whatsoever. Everything is between you and your search engine. </p>
+<h2 id="document-history">Document history</h2>
+<p>discussion: 🍅 <a href="https://github.com/DuckDuckLib/duckduckLib/issues/5">Privacy policy text · Issue #5 · DuckDuckLib/duckduckLib</a></p>
+<p>March 15, 2021: Created</p>
+<p>March 19, 2021</p>
+<ul>
+<li>Added &ldquo;Third Party Plugins installed&rdquo;</li>
+</ul>
+<h2 id="what-the-heck-do-i-care-about-privacy-policies-anyway">~~What the heck do I care about Privacy Policies anyway?~~</h2>
+<p>~~I know, I know. If you want to get into the muck of it, <a href="http://tosdr.org/en/about">“Terms of Service; Didn&rsquo;t Read” (short: ToS;DR)</a> is a good place to start~~</p>
+<blockquote>
+<p>~~We are a user rights <a href="http://tosdr.org/about">initiative</a> to <a href="http://tosdr.org/classification">rate and label</a> website terms &amp; privacy policies, from very good Class A to very bad Class E.~~</p>
+<p>~~Terms of service are often <strong>too long to read</strong>,  but it&rsquo;s important to understand what&rsquo;s in them. Your rights online  depend on them. We hope that our ratings can help you get informed about your rights.~~</p>
+</blockquote>
+<p>~~They even have their own <a href="http://tosdr.org/en/downloads">browser extensions</a>.~~</p>
+<h2 id="_1"></h2>
+<p>As with all internet things, nothing is simple, and nothing is isolated. </p>
+<p><a href="https://en.wikipedia.org/wiki/GitHub">Wikipedia: GitHub</a></p>
+<h3 id="couldbethis-duckducklib-and-this-website">@CouldBeThis, DuckDuckLib and this website</h3>
+<p>🔗CouldBeThis:</p>
+<ul>
+<li>assembled the extension 🔗DuckDuckLib, published to the 🔗Mozilla Firefox Add-ons directory</li>
+<li>assembled this website <a href="https://DuckDuckLib.github.io">DuckDuckLib.github.io</a></li>
+<li>administers the <a href="https://github.com/DuckDuckLib">GitHub repos</a> associated with the extension and the website</li>
+</ul>
+<p>CouldBeThis does not receive <em>any</em> information directly <em>or</em> indirectly of <em>any</em> kind from any of this, beyond what is made publicly available by the various other organizations, companies and services involved in creating something like this for free.  </p>
+<p>Here are some things that do <strong>not</strong> exist:</p>
+<ul>
+<li>
+<p>To the best of my knowledge, I have not placed, or caused to be placed, any </p>
+</li>
+<li>
+<p>devices, </p>
+</li>
+<li>bugs, </li>
+<li>scripts,</li>
+<li>cookies,</li>
+<li>social media thingybobs</li>
+<li>and/or anything else that &ldquo;calls home&rdquo; </li>
+</ul>
+<p>on any of the above for the purposes of </p>
+<ul>
+<li>tracking,</li>
+<li>traffic analysis,</li>
+<li>marketing,</li>
+<li>targeting,</li>
+<li>personalizations, </li>
+<li>comments,</li>
+<li>mailing lists,</li>
+<li>collecting personal information</li>
+<li>and/or any other purpose</li>
+</ul>
+<p>on this website, in the DuckDuckLib Firefox extension, or any of the associated services.</p>
+<ul>
+<li>No money is taken therefor no issues there</li>
+</ul>
+<p>🎣 Projects, organizations and ?softwares? with a fish ( 🎣 ) are only relevant whilst u </p>
+<h2 id="third-parties-whose-constant-involvement-is-mandatory-to-use-the-extension">Third parties whose constant involvement is mandatory to use the extension</h2>
+<h3 id="mozilla">Mozilla</h3>
+<p>Firefox is run by a non-profit called Mozilla. </p>
+<p>Link: <a href="https://www.mozilla.org/en-US/privacy/">Mozilla Privacy Policy</a> </p>
+<h4 id="mozilla-website">Mozilla website</h4>
+<p>Normally, you need to access this to obtain the Firefox browser and extension</p>
+<ul>
+<li>Firefox browser: <a href="https://www.mozilla.org/en-US/firefox/new/">Download Firefox</a> </li>
+<li>Extension: <a href="https://addons.mozilla.org/en-US/firefox/addon/duckducklib/">Download DuckDuckLib</a></li>
+</ul>
+<p>Link: <a href="https://www.mozilla.org/en-US/privacy/websites/">Mozilla Websites, Communications &amp; Cookies Privacy Notice</a></p>
+<h4 id="browser">Browser</h4>
+<p>To use the DuckDuckLib Firefox extension, you need to use Firefox. </p>
+<p>Link: <a href="https://www.mozilla.org/en-US/privacy/firefox/">Firefox Privacy Notice</a></p>
+<ul>
+<li>related: <a href="https://wiki.mozilla.org/Firefox/Data_Collection">Firefox data collection policy</a> </li>
+</ul>
+<h3 id="duckduckgo">DuckDuckGo</h3>
+<p>The point of the extension is to facilitate web searching via <a href="https://duckduckgo.com">DuckDuckGo</a>, so their internet vacuums and information dispensing machines will have access to your information as required to conduct that.</p>
+<p>link: <a href="https://duckduckgo.com/privacy">DuckDuckGo Privacy</a></p>
+<h2 id="third-parties-whose-involvement-is-optional-and-ancillary-to-search-function">Third parties whose involvement is optional and                                    ancillary to search function</h2>
+<h3 id="github">GitHub</h3>
+<h4 id="website-hosting-github-pages">Website hosting: GitHub Pages🎣</h4>
+<p>The website <a href="https://DuckDuckLib.github.io">DuckDuckLib.github.io</a> is hosted by <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+<p>Link: <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement">GitHub Privacy Statement</a> (jump to: <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement#github-pages">GitHub Pages</a>)</p>
+<p>To the best of my knowledge no <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement#third-party-applications">Third party applications</a> are being employed.</p>
+<p>🎣 <em>Only applies while you are actively using this website. DuckDuckLib extension has no direct business with GitHub Pages.</em></p>
+<h4 id="project-repo-services-github">Project &amp; repo services: GitHub🎣</h4>
+<p>In addition to the website, GitHub hosts the back end project stuff for DuckDuckLib and the website. For clarity, that would be:</p>
+<ul>
+<li>DuckDuckLib Extension Repository: <a href="https://github.com/DuckDuckLib/duckduckLib">DuckDuckLib / duckduckLib</a>  </li>
+<li>DuckDuckLib Website/Documentation Repository: <a href="https://github.com/DuckDuckLib/DuckDuckLib.github.io">DuckDuckLib / DuckDuckLib.github.io</a></li>
+<li>Project organization: <a href="https://github.com/DuckDuckLib">DuckDuckLib</a></li>
+</ul>
+<p>If you cruise around on the GitHub website, then it&rsquo;s up to GitHub what data they are collecting.</p>
+<p>Link: <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement">GitHub Privacy Statement</a></p>
+<p>🎣<em>Only applies while you are actively using their website. DuckDuckLib extension has no direct business with GitHub.</em></p>
+<h3 id="website-components-mkdocs">Website components: MkDocs</h3>
+<p>This website is created principally by means of <a href="https://www.mkdocs.org/">MkDocs</a>, a static site generator, possibly with official or community-created plugins. Building the website is handled on my personal computer and the finished pages are upload to the webserver (GitHub Pages, see elsewhere in this document). </p>
+<p>Right now, the site is in actively development, and furthermore, I am trying to learn how to use this software, which is a bit challenging. Therefor I am not certain how it will end up, and what might get tried along the way. Here is a hopefully (but not certainly) exhaustive list of possibilities:</p>
+<ul>
+<li><a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins">MkDocs Plugins · mkdocs/mkdocs Wiki</a> (<a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins">alternate link</a>)</li>
+<li><a href="https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin/">lukasgeiter/mkdocs-awesome-pages-plugin: An MkDocs plugin that simplifies configuring page titles and their order</a></li>
+<li><a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Recipes">MkDocs Recipes</a></li>
+<li><a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes">MkDocs Themes</a>        </li>
+</ul>
+<p>Technical information about plugins are put together: <a href="https://www.mkdocs.org/user-guide/plugins/">Plugins - MkDocs</a></p>
+<ul>
+<li>also: <a href="https://github.com/mkdocs/mkdocs/wiki/Event-Based-Plugin-API">Event Based Plugin API</a></li>
+<li>also: <a href="https://github.com/mkdocs/mkdocs/wiki/Loaders-Based-Plugin-API">Loaders Based Plugin API</a></li>
+</ul>
+<h4 id="third-party-plugins-installed">Third Party Plugins installed</h4>
+<p>n/a</p>
+<h4 id="mkdocs">MkDocs</h4>
+<p>I do not <em>believe</em> there is any actual interaction between users of this extension or website and MkDocs, even when users are on the website. Nevertheless I did attempt to find a relevant statement in the MkDocs website, github, wiki, and some apparently closely related projects. The best I was able to do was <a href="https://github.com/mkdocs/mkdocs">mkdocs / mkdocs.</a>: </p>
+<blockquote>
+<p>Everyone interacting in the MkDocs project&rsquo;s codebases, issue trackers, chat rooms, and mailing lists is expected to follow the <a href="https://www.pypa.io/en/latest/code-of-conduct/">PyPA Code of Conduct</a>.</p>
+</blockquote>
+<p>Link: <a href="https://www.python.org/psf/conduct/">Python Community Code of Conduct | Python Software Foundation</a></p>
+<p>Not sure if applicable or not: <a href="https://www.python.org/privacy/">Privacy Policy | Python.org</a> </p>
+<ul>
+<li>also: <a href="https://github.com/pypa/.github/blob/main/CODE_OF_CONDUCT.md">.github/CODE_OF_CONDUCT.md at main · pypa/.github</a></li>
+</ul>
+<h4 id="javascript">Javascript</h4>
+<p><a href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css</a></p>
+<p><a href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700">https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700</a></p>
+<hr />
+<p>Regarding the DuckDuckLib.github.io website</p>
+<p>Hosting by: Github.com</p>
+<p>ther <a href="https://github.com/DuckDuckLib">Github hosted services</a></p>
+<p>Only applies: If you are <strong>actively using</strong> <a href="https://DuckDuckLib.github.io">this website</a> or other <a href="https://github.com/DuckDuckLib">Github hosted services</a>. Does <strong>not</strong> have anything at all to do with your searches. </p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
