@@ -1,4 +1,5 @@
 ---
+<!-=
 title: Instructions
 description: How to install, use and uninstalled DuckDuckLib Firefox extension.
 authors:
@@ -8,6 +9,7 @@ date: 2021-03-15
 typora-copy-images-to: /images
 # use for 2ndary level document:
 #typora-copy-images-to: ../images
+-->
 ---
 
 ## Instructions
@@ -36,7 +38,7 @@ Once you have Firefox installed, make sure to [keep it updated](https://support.
 1. Visit the [extension's web page](https://addons.mozilla.org/en-US/firefox/addon/duckducklib/) with Firefox.
 2. Click "Add to Firefox"
 
-![ddL_screenshot_00a_install_add_annotated](images/ddL_screenshot_00a_install_add_annotated-5808224.png)
+![ddL_screenshot_00a_install_add_annotated](images/ddL_screenshot_00a_install_add_annotated.png)
 
 3. A confirmation box appears to make sure you want to add the extension.  Click "Add".
 
