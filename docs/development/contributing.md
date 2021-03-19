@@ -4,10 +4,12 @@ description: Information for anyone interested in developing or forking this ext
 authors:
 	- CouldBeThis
 date: 2021-03-15
+<!----
 # use for root-level document:
 #typora-copy-images-to: /images
 # use for 2ndary level document:
 typora-copy-images-to: ../images
+​---->
 ---
 
 # Contributing
@@ -36,17 +38,26 @@ See [mkdocs.yml](https://github.com/DuckDuckLib/DuckDuckLib.github.io/blob/main/
 
 #### Environment
 
-In addition to `mkdocs`, the following 3rd party plugins are required to build the website:
+In addition to `mkdocs`, the following 3rd party plugins are required to build the website. Install scripts listed first, all together, followed by details about what they are and why they are needed.
 
-n/a
+```zsh
+# mkdcomments
+pip3 pip install git+https://github.com/ryneeverett/python-markdown-comments.git
+```
+
+##### `mkdcomments`
+
+github: [ryneeverett/python-markdown-comments](https://github.com/ryneeverett/python-markdown-comments)
+
+> Removes triple-dashed html comments (`<!---comment-->`) in preprocessing.
+
+required to fix (workaround) issue: [YAML frontmatter parsed totally wrong when published to github pages via gh-deploy · Issue #23 · DuckDuckLib/duckduckLib](https://github.com/DuckDuckLib/duckduckLib/issues/23)
 
 #### Building
 
 ```zsh
-#cd ../DuckDuckLib.github.io
-mkdocs gh-deploy --config-file ./mkdocs.yml --remote-branch main
-
-mkdocs gh-deploy --config-file mkdocs.yml --remote-branch main
+cd ../DuckDuckLib.github.io
+mkdocs gh-deploy --config-file mkdocs.yml
 ```
 
 

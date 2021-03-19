@@ -6,11 +6,22 @@
 
 site_name: 🦆🦆🏴 DuckDuckLib - Firefox search extension that turns off "moderate" results
 
-repo_url: https://github.com/DuckDuckLib/DuckDuckLib.github.io
-edit_uri: blob/main/docs/
-# this setting is required because this project uses the name "main" for main tree rather than "master" which is assumed; if omitted, all "edit" links will be broken
+site_description: Firefox search extension that turns "safe search" and regional filtering OFF by default so you can decide what you want to see. 
+
+site_author: CouldBeThis
+
+copyright: GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007  (AGPLv3)
+
 remote_branch: main
-# this setting is required because this project uses the name "main" for main tree rather than "master" which is assumed; if omitted, all "edit" links will be broken
+# when site uilding by gh-deloy, this sends it to the correct branch
+
+repo_url: https://github.com/DuckDuckLib/DuckDuckLib.github.io
+edit_uri: ""
+# edit_url set to empty string as instructed here 
+# https://www.mkdocs.org/user-guide/configuration/#edit_uri to prevent adding "edit on github" links. these are contraindicated 
+# by use of gh-deploy (see: 
+# https://www.mkdocs.org/user-guide/deploying-your-docs/#project-pages )
+
 
 #nav: 
 #disabled because auto-generated is doing fine
@@ -59,7 +70,7 @@ markdown_extensions:
 # # docs: https://python-markdown.github.io/extensions/toc/
 #   permalink: true
 
-  
+  - mkdcomments
 
 
 plugins:

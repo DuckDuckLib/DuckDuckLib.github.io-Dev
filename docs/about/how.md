@@ -4,10 +4,12 @@ description: Describes the mechanism of the DuckDuckLib Firefox extension.
 authors:
 	- CouldBeThis
 date: 2021-03-15
+<!----
 # use for root-level document:
 #typora-copy-images-to: /images
 # use for 2ndary level document:
 typora-copy-images-to: ../images
+​---->
 
 ---
 

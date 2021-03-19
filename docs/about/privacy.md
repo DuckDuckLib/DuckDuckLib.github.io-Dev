@@ -4,10 +4,12 @@ description: Privacy policy and information about the DuckDuckLib Firefox extens
 authors:
 	- CouldBeThis
 date: 2021-03-19
+<!----
 # use for root-level document:
-# typora-copy-images-to: /images
+#typora-copy-images-to: /images
 # use for 2ndary level document:
 typora-copy-images-to: ../images
+​---->
 ---
 
 # Privacy
