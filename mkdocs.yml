@@ -4,6 +4,8 @@
 #       see: https://yaml.org/spec/1.2/spec.html#id2777534
 #   🦆   
 
+## Basic Site Info #####################################
+
 site_name: 🦆🦆🏴 DuckDuckLib - Firefox search extension that turns off "moderate" results
 
 site_description: Firefox search extension that turns "safe search" and regional filtering OFF by default so you can decide what you want to see. 
@@ -16,7 +18,7 @@ site_author: CouldBeThis
 
 copyright: GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007  (AGPLv3)
 
-## GitHub
+## git & GitHub #####################################
 
 remote_branch: main
 # when site uilding by gh-deloy, this sends it to the correct branch
@@ -27,6 +29,8 @@ edit_uri: ""
 # by use of gh-deploy (see: 
 # https://www.mkdocs.org/user-guide/deploying-your-docs/#project-pages )
 
+## Theming & Layout #####################################
+
 #theme:
 # name: readthedocs
 ##   hljs_languages:
@@ -34,14 +38,20 @@ edit_uri: ""
 ##       - rust
 # sticky_navigation: true
 
+# Theme: Cider
+# docs: https://sourcefoundry.org/cinder/
+# github: https://github.com/chrissimpkins/cinder
 theme:
   name: null
   custom_dir: 'cinder'
   colorscheme: dracula
+  # just for code highlighting, I think
 
 #nav: 
 #disabled because auto-generated is doing fine
 #documention if ever required: https://www.mkdocs.org/user-guide/configuration/#nav
+
+## Markdown Extensions #####################################
 
 markdown_extensions:
 # docs: https://www.mkdocs.org/user-guide/configuration/#markdown_extensions 
@@ -87,6 +97,8 @@ markdown_extensions:
 #   permalink: true
 
   - mkdcomments
+
+## Plugins #####################################
 
 plugins:
 # docs: https://www.mkdocs.org/user-guide/configuration/#plugins
