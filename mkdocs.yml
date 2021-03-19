@@ -8,13 +8,18 @@ site_name: 🦆🦆🏴 DuckDuckLib - Firefox search extension that turns off "m
 
 site_description: Firefox search extension that turns "safe search" and regional filtering OFF by default so you can decide what you want to see. 
 
+site_url: https://DuckDuckLib.github.io
+# required by the theme Cinder
+# see: https://sourcefoundry.org/cinder/#1-set-the-site_url-configuration-field
+
 site_author: CouldBeThis
 
 copyright: GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007  (AGPLv3)
 
+## GitHub
+
 remote_branch: main
 # when site uilding by gh-deloy, this sends it to the correct branch
-
 repo_url: https://github.com/DuckDuckLib/DuckDuckLib.github.io
 edit_uri: ""
 # edit_url set to empty string as instructed here 
@@ -22,6 +27,17 @@ edit_uri: ""
 # by use of gh-deploy (see: 
 # https://www.mkdocs.org/user-guide/deploying-your-docs/#project-pages )
 
+#theme:
+# name: readthedocs
+##   hljs_languages:
+##       - yaml
+##       - rust
+# sticky_navigation: true
+
+theme:
+  name: null
+  custom_dir: 'cinder'
+  colorscheme: dracula
 
 #nav: 
 #disabled because auto-generated is doing fine
@@ -71,7 +87,6 @@ markdown_extensions:
 #   permalink: true
 
   - mkdcomments
-
 
 plugins:
 # docs: https://www.mkdocs.org/user-guide/configuration/#plugins

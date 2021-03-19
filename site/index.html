@@ -1,143 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Firefox search extension that turns "safe search" and regional filtering OFF by default so you can decide what you want to see.">
-        <meta name="author" content="CouldBeThis">
-        
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>🦆🦆🏴 DuckDuckLib - Firefox search extension that turns off "moderate" results</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
-
-    <body class="homepage">
-        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href=".">🦆🦆🏴 DuckDuckLib - Firefox search extension that turns off "moderate" results</a>
-                <!-- Expander button -->
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Expanded navigation -->
-                <div id="navbar-collapse" class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="navitem active">
-                                <a href="." class="nav-link">Home</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="contact/" class="nav-link">Contact</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="faq/" class="nav-link">Faq</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="instructions/" class="nav-link">Instructions</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="links/" class="nav-link">Links</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="about/how/" class="dropdown-item">How</a>
-</li>
-                                    
-<li>
-    <a href="about/privacy/" class="dropdown-item">Privacy</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li>
-    <a href="development/contributing/" class="dropdown-item">Contributing</a>
-</li>
-                                    
-<li>
-    <a href="development/roadmap/" class="dropdown-item">Roadmap</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a rel="next" href="contact/" class="nav-link">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://github.com/DuckDuckLib/DuckDuckLib.github.io" class="nav-link"><i class="fa fa-github"></i> GitHub</a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
-            <span class="fa fa-angle-down"></span>
-        </button>
-    </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Firefox search extension that turns "safe search" and regional filtering OFF by default so you can decide what you want to see.">
+    <meta name="author" content="CouldBeThis">
+    <link rel="canonical" href="https://DuckDuckLib.github.io/">
+    <link rel="shortcut icon" href="img/favicon.ico">
 
     
-    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
-        <ul class="nav flex-column">
+    <title>Home - 🦆🦆🏴 DuckDuckLib - Firefox search extension that turns off "moderate" results</title>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.min.css">
+    <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+    <link href="css/base.min.css" rel="stylesheet">
+    <link href="css/cinder.min.css" rel="stylesheet">
+
+    
+        
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/styles/dracula.min.css">
+        
+    
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+            <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+        <![endif]-->
+
+    
+
+     
+</head>
+
+<body class="homepage" >
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             
-            <li class="nav-item" data-level="1"><a href="#description" class="nav-link">description:</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
+
+            <!-- Main title -->
+
             
-            <li class="nav-item" data-level="1"><a href="#duckducklib" class="nav-link">DuckDuckLib 🦆🦆🏴</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#_1" class="nav-link">🍞🐟🎣👓🐕🐣🥖🍞🐟🎣</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#what-is-it" class="nav-link">What is it?</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#faq" class="nav-link">FAQ</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-              </ul>
-            </li>
-        </ul>
+              <a class="navbar-brand" href=".">🦆🦆🏴 DuckDuckLib - Firefox search extension that turns off "moderate" results</a>
+            
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="active">
+                        <a href=".">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="contact/">Contact</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="faq/">Faq</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="instructions/">Instructions</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="links/">Links</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="about/how/">How</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="about/privacy/">Privacy</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="development/contributing/">Contributing</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="development/roadmap/">Roadmap</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                            <i class="fas fa-search"></i> Search
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a rel="prev" >
+                            <i class="fas fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="next" href="contact/">
+                            Next <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/DuckDuckLib/DuckDuckLib.github.io"><i class="fab fa-github"></i> GitHub</a>
+                    </li>
+            </ul>
+        </div>
     </div>
+</div>
+
+    <div class="container">
+        
+        
+        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="first-level active"><a href="#description">description:</a></li>
+        <li class="first-level "><a href="#duckducklib">DuckDuckLib 🦆🦆🏴</a></li>
+            <li class="second-level"><a href="#_1">🍞🐟🎣👓🐕🐣🥖🍞🐟🎣</a></li>
+                
+            <li class="second-level"><a href="#what-is-it">What is it?</a></li>
+                
+            <li class="second-level"><a href="#faq">FAQ</a></li>
+                
+                <li class="third-level"><a href="#what-is-duckduckgo">What is DuckDuckGo?</a></li>
+    </ul>
 </div></div>
-                    <div class="col-md-9" role="main">
+        <div class="col-md-9" role="main">
 
 <h1 id="description">description:</h1>
 <p>authors:
@@ -157,27 +202,49 @@ date: 2021-03-15</p>
 <p>You do not need this extension to accomplish either of these goals. It is merely a convenience.</p>
 <h2 id="faq">FAQ</h2>
 <h3 id="what-is-duckduckgo">What is DuckDuckGo?</h3></div>
-            </div>
-        </div>
+        
+        
+    </div>
 
-        <footer class="col-md-12">
+    
+      <footer class="col-md-12 text-center">
+          
+          
             <hr>
-                <p>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007  (AGPLv3)</p>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = ".",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+            <p>
+            <small>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007  (AGPLv3)</small><br>
+            
+            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
+            </p>
+          
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+          
+          
+      </footer>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap-3.0.3.min.js"></script>
+
+    
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.0/build/highlight.min.js"></script>
+        
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    <script>var base_url = "."</script>
+    
+    <script src="js/base.js"></script>
+    <script src="search/main.js"></script>
+
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
                 <h4 class="modal-title" id="searchModalLabel">Search</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
             </div>
             <div class="modal-body">
                 <p>
@@ -186,7 +253,7 @@ date: 2021-03-15</p>
                 </p>
                 <form>
                     <div class="form-group">
-                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>
@@ -235,11 +302,11 @@ date: 2021-03-15</p>
         </div>
     </div>
 </div>
-
     </body>
+
 </html>
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-03-19 17:27:14.665917+00:00
+Build Date UTC : 2021-03-19 18:27:17.813718+00:00
 -->
