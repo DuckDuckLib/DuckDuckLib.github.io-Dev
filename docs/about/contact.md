@@ -1,17 +1,3 @@
----
-title: Contact
-description: If you feel compelled to reach out to me, I am happy to hear from you. 
-authors:
-	- CouldBeThis
-date: 2021-03-15
-<!----
-# use for root-level document:
-typora-copy-images-to: /images
-# use for 2ndary level document:
-#typora-copy-images-to: ../images
-​---->
----
-
 # Contact
 
 If you feel compelled to reach out to me, I am happy to hear from you. 

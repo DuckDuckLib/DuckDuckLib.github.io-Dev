@@ -4,6 +4,11 @@
 #       see: https://yaml.org/spec/1.2/spec.html#id2777534
 #   🦆   
 
+## Local dev options #####################################
+
+dev_addr: 192.168.8.200:5075
+# where to serve local from
+
 ## Basic Site Info #####################################
 
 site_name: 🦆🦆🏴 DuckDuckLib - Firefox search extension that turns off "moderate" results
@@ -39,7 +44,7 @@ edit_uri: ""
 # sticky_navigation: true
 
 # Theme: Cider
-# docs: https://sourcefoundry.org/cinder/
+# docs:   https://sourcefoundry.org/cinder/
 # github: https://github.com/chrissimpkins/cinder
 theme:
   name: null

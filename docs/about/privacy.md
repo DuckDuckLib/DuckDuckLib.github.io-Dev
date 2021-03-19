@@ -1,17 +1,3 @@
----
-title: Privacy
-description: Privacy policy and information about the DuckDuckLib Firefox extension, this website, and related. 
-authors:
-	- CouldBeThis
-date: 2021-03-19
-<!----
-# use for root-level document:
-#typora-copy-images-to: /images
-# use for 2ndary level document:
-typora-copy-images-to: ../images
-​---->
----
-
 # Privacy
 
 ## The DuckDuckLib Firefox extension

@@ -1,17 +1,3 @@
----
-title:Topical external links
-description: What's a homepage without links?
-authors:
-	- CouldBeThis
-date: 2021-03-15
-<!----
-# use for root-level document:
-typora-copy-images-to: /images
-# use for 2ndary level document:
-#typora-copy-images-to: ../images
-​---->
----
-
 # Topical external links
 
 What's a homepage without links?
