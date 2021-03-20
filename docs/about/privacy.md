@@ -1,14 +1,10 @@
-# Privacy
+# Privacy (draft in progress)
 
 ## The DuckDuckLib Firefox extension
 
 Please review 🔗How it works for a description of this extension.
 
-
-
 The author of DuckDuckLib, @CouldBeThis, has no access to anything at all whatsoever. Everything is between you and your search engine. 
-
-
 
 ## Document history
 
@@ -18,7 +14,7 @@ March 15, 2021: Created
 
 March 19, 2021
 
-- Added "Third Party Plugins installed"
+- Added "Third Party Plugins installed": `mkdcomments` and `mkdocs-material`
 
 ## ~~What the heck do I care about Privacy Policies anyway?~~
 
@@ -176,7 +172,31 @@ Technical information about plugins are put together: [Plugins - MkDocs](https:/
 
 #### Third Party Plugins installed
 
-n/a
+##### `mkdcomments`
+
+github: [ryneeverett/python-markdown-comments](https://github.com/ryneeverett/python-markdown-comments)
+
+makes a small change to the way text documents are handled before leaving the computer I develop on. Should have no impact on end user. 
+
+##### Theme: `mkdocs-material`
+
+github: [squidfunk/mkdocs-material](https://github.com/squidfunk/mkdocs-material) | docs/demo: [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/getting-started/)
+
+[Data privacy - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/data-privacy/)
+
+> In itself, Material for MkDocs does not perform any tracking and should adhere to the [General Data Protection Regulation](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) (GDPR), but it integrates with some third-party services that may not.
+>
+> **Third-party services**
+>
+> Google Fonts
+>
+> Material for MkDocs makes fonts [configurable](https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/) by relying on Google Fonts CDN, which may be in breach with GDPR. The usage of Google's CDN can be [easily disabled](https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/#disabling-font-loading) via `mkdocs.yml`.
+>
+> Google Analytics and Disqus
+>
+> Material for MkDocs comes with optional [Google Analytics](https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-analytics/#google-analytics) and [Disqus](https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/#disqus) integrations, both of which must be enabled explicitly, so there's no immediate action if you don't use those.
+
+On this website, *none* of the above options (Google Fonts, Google Analytics, and Disqus) are enabled. 
 
 #### MkDocs
 

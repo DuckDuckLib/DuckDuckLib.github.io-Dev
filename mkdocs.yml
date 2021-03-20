@@ -11,7 +11,7 @@ dev_addr: 192.168.8.200:5075
 
 ## Basic Site Info #####################################
 
-site_name: 🦆🦆🏴 DuckDuckLib - Firefox search extension that turns off "moderate" results
+site_name: 🦆🦆🏴 DuckDuckLib
 
 site_description: Firefox search extension that turns "safe search" and regional filtering OFF by default so you can decide what you want to see. 
 
@@ -27,7 +27,8 @@ copyright: GNU AFFERO GENERAL PUBLIC LICENSE Version 3, 19 November 2007  (AGPLv
 
 remote_branch: main
 # when site uilding by gh-deloy, this sends it to the correct branch
-repo_url: https://github.com/DuckDuckLib/DuckDuckLib.github.io
+repo_url: https://github.com/DuckDuckLib/DuckDuckLib
+repo_name: DuckDuckLib/DuckDuckLib
 edit_uri: ""
 # edit_url set to empty string as instructed here 
 # https://www.mkdocs.org/user-guide/configuration/#edit_uri to prevent adding "edit on github" links. these are contraindicated 
@@ -46,15 +47,76 @@ edit_uri: ""
 # Theme: Cider
 # docs:   https://sourcefoundry.org/cinder/
 # github: https://github.com/chrissimpkins/cinder
-theme:
-  name: null
-  custom_dir: 'cinder'
-  colorscheme: dracula
+#theme:
+# name: null
+# custom_dir: 'cinder'
+# colorscheme: dracula
   # just for code highlighting, I think
   # REMOVED
   # this theme has a bug that I can't resolve without removing 
   # a bunch of stuff from the site
   # see: https://github.com/chrissimpkins/cinder/issues/102
+
+# Theme:  Material for MkDocs
+# docs:   https://squidfunk.github.io/mkdocs-material/customization/
+# github: https://github.com/squidfunk/mkdocs-material
+
+theme:
+  name: material
+  font: false
+  # disables Google font loading via CDN (if changed, must update Privacy Policy)
+  palette:
+    scheme: preference
+    primary: red
+    accent: amber
+    # docs: https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
+  logo: images/logos/ddl-icon-128.png
+  favicon: images/logos/favicon.ico
+  features:
+     # docs for all below til otherwise noted:
+     # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/
+    - navigation.instant
+    # "clicks on all internal links will be intercepted and 
+    # dispatched via XHR without fully reloading the page"
+   
+    - navigation.tracking
+    # "URL in the address bar is automatically updated with 
+    # the active anchor as highlighted in the table of contents."
+
+    - navigation.tabs
+    # "top-level sections are rendered in a menu layer below the
+    # header for viewports above 1220px, but remain as-is on mobile
+
+    - navigation.expand
+    # "left sidebar will expand all collapsible subsections by default"
+
+    - toc.integrate
+    # Instead of the page's TOC on the right, it's on the left,
+    # integrated with whole site nav, unless tabs is enabled above
+    
+
+    - header.autohide
+    # "header is automatically hidden when the user scrolls past 
+    # a certain threshold"
+    # docs: https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-header/
+
+## Footer #####################################
+
+extra:
+  social:
+    - icon: fontawesome/solid/code-branch
+      link: https://github.com/DuckDuckLib/DuckDuckLib.github.io
+      name: website github repo
+    - icon: fontawesome/brands/github
+      link: https://copyleft
+      name: copyleft
+    - icon: fontawesome/solid/envelope
+      link: mailto:test@test.com
+      name: Send an email top developer
+      # docs: https://squidfunk.github.io/mkdocs-material/setup/setting-up-the-footer/#configuration
+      # (but I don't think it is theme-specific)
+
+## Navigation (Manual) #####################################    
 
 #nav: 
 #disabled because auto-generated is doing fine
@@ -103,7 +165,8 @@ markdown_extensions:
   - toc:
 # # Table of Contents | "generates a Table of Contents"
 # # docs: https://python-markdown.github.io/extensions/toc/
-#   permalink: true
+        permalink: 🎣
+        slugify: !!python/name:pymdownx.slugs.uslugify
 
   - mkdcomments
 
@@ -114,6 +177,27 @@ plugins:
 #  and: https://www.mkdocs.org/user-guide/plugins/ (mostly re: development)
 # list of 3rd party: https://github.com/mkdocs/mkdocs/wiki/MkDocs-Plugins
   - search
+  # Revision date, localized (Material Theme)
+  # docs: https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#revision-date-localized
+  
+  #- git-revision-date
+  # displaying the date a document was last updated at the bottom of each page
+  - git-revision-date-localized:
+  # adds support for adding a localized last updated date at
+  # the bottom of each page
+      type: timeago 
+      #options: date, datetime, iso_date, iso_datetime and timeago
+      fallback_to_build_date: true
+  
+  
+
+
+
+
+
+
+
+
 
 
 
