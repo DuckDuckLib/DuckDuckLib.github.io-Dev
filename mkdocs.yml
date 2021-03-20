@@ -107,9 +107,9 @@ extra:
     - icon: fontawesome/solid/code-branch
       link: https://github.com/DuckDuckLib/DuckDuckLib.github.io
       name: website github repo
-    - icon: fontawesome/brands/github
-      link: https://copyleft
-      name: copyleft
+    - icon: fontawesome/brands/firefox-browser
+      link: https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-safe/
+      name: Get it for Firefox
     - icon: fontawesome/solid/envelope
       link: mailto:test@test.com
       name: Send an email top developer
@@ -135,6 +135,8 @@ markdown_extensions:
   - admonition
   # Admonition | "rST-style admonitions"
   # docs: https://python-markdown.github.io/extensions/admonition/
+  # better docs: https://squidfunk.github.io/mkdocs-material/reference/admonitions/
+  # 
   
   - attr_list
   # Attribute Lists | "syntax to define attributes on the various HTML elements in markdown’s output."
